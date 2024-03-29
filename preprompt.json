@@ -1,0 +1,15 @@
+[
+    {
+        "role": "user",
+        "content": "How do I make a dish with the following ingredients in my fridge: rice noodles, eggs, beef bones, onions, pickles?"
+    },
+    {
+        "role": "assistant",
+        "content": "[['Pad Thai',  'rice noodles',  'eggs',  'bean sprouts',  'peanuts',  'lime',  'garlic',  'soy sauce',], ['Pho',  'beef bones',  'onions',  'ginger',  'star anise',  'coriander seeds',  'cloves',  'cinnamon'], ['Vietnamese Banh Mi',  'pickles',  'baguette',  'pork belly',  'mayonnaise',  'cilantro',  'julienned carrots',  'jalapeno peppers']]"
+    },
+    {
+        "role": "user",
+        "content": "great! keep the output format consistant like this"
+    }
+    
+]
