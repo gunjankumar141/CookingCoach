@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "../static/style.css">
+  <link rel="icon" type="image/png" href="../static/images/fridge_logo.png">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Popular Recipes</a></li>
+    </ul>
+</nav>
+  
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title" >Recipe Generator</h2>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+
+        <div>
+          <form class="upload-form" id="uploadForm" enctype="multipart/form-data">
+            <label onclick="displayUploadBtn()" for="photoInput" class="custom-file-input-label">
+                Choose a File
+            </label>
+            <span class="selected-file-name"></span>
+            <input type="file" name="photo" id="photoInput" class="file-input" accept="image/*" onchange="displayFileName()">
+            <button type="button" class="upload-button" onclick="uploadPhoto()">Upload</button>
+        </form>
+        <div id="result"></div>
+
+
+        </div>
+        <div class="loader-container">
+          <div class="loader"></div>
+          
+      </div>
+      <p class="loader-text">App looking for recipe...</p>
+
+      </div>
+      <div class = "meal-result">
+        <h2 class = "title" id="display-result">Your Search Results:</h2>
+        <div id= "meal"></div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src = "../static/script.js" ></script>
+</body>
+</html>
