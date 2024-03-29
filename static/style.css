@@ -19,6 +19,8 @@ body{
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
+    /* font-weight: 300;
+    font-size: 1.05rem; */
 }
 
 /*  */
@@ -30,6 +32,7 @@ body{
 }
 .text{
     opacity: 0.8;
+    /* opacity: 0.9; */
 }
 .title{
     font-size: 2rem;
