@@ -35,6 +35,8 @@ c. Chat Completion with OpenAI: - The constructed prompt is sent to the OpenAI A
 
 d. Recipe Presentation: - The completed recipe suggestion along with the identified ingredients and corresponding images are presented to the user through the front-end interface. Users can view the suggested recipes, along with relevant images, for further exploration.
 
+**Results**
+
 ![image](https://github.com/gunjankumar141/CookingCoach/assets/60428715/e4e63eb3-dc2d-4d6c-a0b8-f5cc6855a970)
 
 ![image](https://github.com/gunjankumar141/CookingCoach/assets/60428715/7429f364-9eac-4cc7-bb72-767db6d1ff7b)
