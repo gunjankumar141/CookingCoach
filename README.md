@@ -1,6 +1,7 @@
 Project Title: Cooking Coach
 
 **Introduction and Motivation**
+
 Our project addresses the growing need for personalized and convenient cooking solutions. As culinary enthusiasts explore diverse cuisines and ingredients, identifying items in the kitchen and discovering suitable recipes can become challenging. Traditional methods of recipe discovery are often time-consuming, requiring extensive manual input and searching.
 
 **Project Description**
@@ -27,8 +28,11 @@ ImageNet Dataset: Used to train the Inception V3 model for recognizing a wide ra
 **Workflow:**
 
 a. Image Processing: The user uploads an image containing ingredients through the front-end interface. - The Flask backend receives the image data and passes it to the Inception V3 model for processing. - The Inception V3 model identifies objects and ingredients present in the image.
+
 b. Chat Prompt Generation: - The identified objects are formatted into a coherent prompt for the OpenAI API. - This prompt is constructed to ask the chatbot for recipes based on the recognized ingredients.
+
 c. Chat Completion with OpenAI: - The constructed prompt is sent to the OpenAI API for chat completion. - OpenAI's language model generates a response suggesting recipes based on the provided ingredients.
+
 d. Recipe Presentation: - The completed recipe suggestion along with the identified ingredients and corresponding images are presented to the user through the front-end interface. Users can view the suggested recipes, along with relevant images, for further exploration.
 
 
